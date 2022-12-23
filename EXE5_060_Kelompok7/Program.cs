@@ -71,7 +71,7 @@ namespace EXE5_060_Kelompok7
                 try
                 {
                     Console.WriteLine("Menu");
-                    Console.WriteLine("1. Implement Insert Operation");
+                    Console.WriteLine("1. Implement Enter Operation");
                     Console.WriteLine("2. Implement Delete Operation");
                     Console.WriteLine("3. Display Values");
                     Console.WriteLine("4. Exit");
