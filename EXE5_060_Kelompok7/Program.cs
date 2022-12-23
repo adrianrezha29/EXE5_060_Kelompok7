@@ -8,6 +8,11 @@ namespace EXE5_060_Kelompok7
 {
     class Node
     {
-        
+        public int data;
+        public Node;
+    }
+    class QueueLinkedList
+    {
+
     }
 }
