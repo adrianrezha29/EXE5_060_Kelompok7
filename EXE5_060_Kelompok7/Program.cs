@@ -21,5 +21,9 @@ namespace EXE5_060_Kelompok7
             Adrian = null;
             Rezha = null;
         }
+        public void Insert(string value)
+        {
+            
+        }
     }
 }
