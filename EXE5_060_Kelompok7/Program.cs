@@ -25,6 +25,7 @@ namespace EXE5_060_Kelompok7
             string value;
             Console.WriteLine("\nEnter the element");
             value = Console.ReadLine();
+            Node newnode = new Node();
             newnode.data = value;
             if (Adrian == null)
             {
@@ -34,8 +35,8 @@ namespace EXE5_060_Kelompok7
             }
             else
             {
-                Adrian.next = newnode;
                 Rezha.next = newnode;
+                Rezha = newnode;
             }
         }
         public void Delete()
@@ -61,7 +62,53 @@ namespace EXE5_060_Kelompok7
     }
     class Program
     {
-
+        static void Main(string[] args)
+        {
+            QueueLinkedList q = new QueueLinkedList();
+            char ch;
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Menu");
+                    Console.WriteLine("1. Implement Insert Operation");
+                    Console.WriteLine("2. Implement Delete Operation");
+                    Console.WriteLine("3. Display Values");
+                    Console.WriteLine("4. Exit");
+                    Console.WriteLine("\nEnter Your Choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            {
+                                q.Enter();
+                            }
+                            break;
+                        case '2':
+                            {
+                                q.Delete();
+                            }
+                            break;
+                        case '3':
+                            {
+                                q.Display();
+                            }
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine("Invalid Option!!");
+                            }
+                            break;
+                    }
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Check for the values Entered. ");
+                }
+            }
+        }
     }
-
 }
