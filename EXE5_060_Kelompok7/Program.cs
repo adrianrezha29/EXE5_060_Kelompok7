@@ -13,6 +13,13 @@ namespace EXE5_060_Kelompok7
     }
     class QueueLinkedList
     {
+        Node Adrian;
+        Node Rezha;
 
+        public QueueLinkedList()
+        {
+            Adrian = null;
+            Rezha = null;
+        }
     }
 }
