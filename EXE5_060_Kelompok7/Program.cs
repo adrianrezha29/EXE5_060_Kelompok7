@@ -8,22 +8,47 @@ namespace EXE5_060_Kelompok7
 {
     class Node
     {
-        public int data;
-        public Node;
+        public string data;
+        public Node next;
     }
     class QueueLinkedList
     {
-        Node Adrian;
-        Node Rezha;
+        Node Adrian, Rezha;
 
         public QueueLinkedList()
         {
             Adrian = null;
             Rezha = null;
         }
-        public void Insert(string value)
+        public void Enter()
         {
-            
+            string value;
+            Console.WriteLine("\nEnter the element");
+            value = Console.ReadLine();
+            newnode.data = value;
+            if (Adrian == null)
+            {
+                Adrian = newnode();
+                Rezha = newnode();
+                return;
+            }
+            else
+            {
+                Adrian.next = newnode;
+                Rezha.next = newnode;
+            }
         }
+        public void Delete()
+        {
+            if(Adrian == null)
+            {
+                Console.WriteLine("\nQueue Is Empty!!");
+                return;
+            }
+            Adrian = Adrian.next;
+            if (Adrian == null)
+                Rezha = null;
+        }
+        
     }
 }
