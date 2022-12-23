@@ -29,8 +29,8 @@ namespace EXE5_060_Kelompok7
             newnode.data = value;
             if (Adrian == null)
             {
-                Adrian = newnode();
-                Rezha = newnode();
+                Adrian = newnode;
+                Rezha = newnode;
                 return;
             }
             else
