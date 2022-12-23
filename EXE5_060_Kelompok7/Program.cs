@@ -46,9 +46,22 @@ namespace EXE5_060_Kelompok7
                 return;
             }
             Adrian = Adrian.next;
-            if (Adrian == null)
-                Rezha = null;
         }
-        
+        public void Display()
+        {
+            if (Adrian == null)
+            {
+                Console.WriteLine("\nQueue is Empty or Filled !!");
+                return;
+            }
+            Node Display;
+            for (Display = Adrian; Display != null; Display = Display.next)
+                Console.WriteLine(Display.data);
+        }
     }
+    class Program
+    {
+
+    }
+
 }
