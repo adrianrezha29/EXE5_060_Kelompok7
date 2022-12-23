@@ -6,10 +6,5 @@ using System.Threading.Tasks;
 
 namespace EXE5_060_Kelompok7
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
+
 }
