@@ -6,5 +6,8 @@ using System.Threading.Tasks;
 
 namespace EXE5_060_Kelompok7
 {
-
+    class Node
+    {
+        
+    }
 }
